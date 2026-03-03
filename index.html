@@ -19,7 +19,7 @@
   table {
     margin: 5rem auto;
   }
-  @media (prefers-color-scheme: dark) {
+  @media (prefers-color-scheme: dark) {    
     body,
     input {
       background: #222;
@@ -149,11 +149,11 @@
   // Display game over, cancel events
   function endGame(result) {
     if (result === "draw") {
-      gameOver.textContent = "Game over, refresh to play again 🧑‍💻 🤖!: Draw";
+      gameOver.textContent = "The game is ended but you are still good 🧑‍💻 🤖!: draw";
     } else if (result === "human") {
-      gameOver.textContent = "Game over, refresh to play again 🧑‍💻 🤖!: You win";
+      gameOver.textContent = "The game ended stop playing 🧑‍💻 🤖!: you won";
     } else if (result === "robot") {
-      gameOver.textContent = "Game over, refresh to play again 🧑‍💻 🤖!: Robot wins";
+      gameOver.textContent = "The game is overrrr 🧑‍💻 🤖!: robot won";
     }
     gameOver.hidden = false;
     playAgainBtn.hidden = false;
